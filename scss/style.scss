@@ -1,0 +1,15 @@
+//Base
+@import 'base/vars';
+@import 'base/reset';
+
+//Components
+@import 'components/navbar';
+@import 'components/footer';
+
+//Layouts
+@import 'layouts/index';
+@import 'layouts/noticias';
+@import 'layouts/lanzamientos';
+@import 'layouts/contacto';
+@import 'layouts/recomendados';
+@import 'layouts/mediaqueries';

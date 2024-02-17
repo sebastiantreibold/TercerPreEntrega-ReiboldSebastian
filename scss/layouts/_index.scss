@@ -1,0 +1,138 @@
+/* Seccion de Index*/
+
+main {
+    background-color: $primary-color;
+    padding: 1px;
+
+    .grilla {
+        background-color: $primary-color;
+        margin-top: 100px;
+        margin-left: 50px;
+        margin-right: 200px;
+        margin-bottom: 100px;
+        display: grid;
+        grid-template-rows: 400px;
+        grid-template-areas:
+            'a1 a2';
+
+        .box {
+            font-size: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .b1 {
+            grid-area: a1;
+            width: 100%;
+            height: 350px;
+
+            .main-text {
+                font-family: $primary-font, sans-serif;
+                font-size: 20px;
+                color: $secondary-color;
+                margin-top: 50px;
+            }
+
+            .sub-text {
+                font-family: $primary-font, sans-serif;
+                font-size: 15px;
+                color: $secondary-color;
+                margin: 0;
+            }
+
+            .custom-button {
+                display: inline-block; /* Para que los elementos <a> se comporten como bloques */
+                width: 400px;
+                height: 80px;
+                background-color: $secondary-color;
+                color: $primary-color;
+                border: 3px solid $primary-color;
+                border-radius: 25px;
+                font-size: 15px;
+                font-family: $primary-font;
+                cursor: pointer;
+                margin-top: 40px;
+                text-align: center; /* Para centrar el texto horizontalmente */
+                line-height: 80px; /* Para centrar el texto verticalmente */
+                text-decoration: none; /* Eliminar el subrayado predeterminado en los enlaces */
+                transition: background-color 0.3s ease;
+            
+                &:hover {
+                    background-color: $primary-color;
+                    color: $secondary-color;
+                    border-color: $secondary-color;
+                }
+            }
+            
+        }
+
+        .b2 {
+            width: 100%;
+            height: 350px;
+            grid-area: a2;
+        }
+
+    }
+
+    .grilla-extensa {
+        margin-bottom: 0px;
+        width: 100%;
+        height: 800px;
+        display: grid;
+        grid-template-rows: 400px;
+        background-color: $secondary-color;
+        grid-template-areas:
+            'x0 x0 x0'
+            'x2 x1 x3';
+
+        .t1 {
+            margin-top: -50px;
+            margin-left: 25%;
+            width: 300px;
+            height: 300px;
+            grid-area: x1;
+        }
+
+        .t2 {
+            margin-top: -50px;
+            margin-left: 50%;
+            width: 300px;
+            height: 300px;
+            grid-area: x2;
+        }
+
+        .t3 {
+            margin-top: -50px;
+            width: 300px;
+            height: 300px;
+            grid-area: x3;
+        }
+
+        .titulo {
+            margin-top: 100px;
+            width: 90%;
+            height: 200px;
+            grid-area: x0;
+
+           .tema{
+                margin-left: 10%;
+            }
+        }
+
+        .top {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .top {
+            font-size: 10px;
+        }
+        
+        p {
+            font-size: 20px;
+        }
+    }
+
+}

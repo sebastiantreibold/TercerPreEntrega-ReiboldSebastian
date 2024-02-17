@@ -1,0 +1,86 @@
+/* Diseño de Lanzamientos*/
+
+.grilla-lanzamientos {
+    margin-top: 2px;
+    display: grid;
+    grid-template-areas:
+        'z1'
+        'z2'
+        'z3';
+    background-color: $primary-color;
+}
+
+.s1 {
+    grid-area: z1;
+    background-color: $secondary-color;
+}
+
+.s2 {
+    grid-area: z2;
+    background-color: $secondary-color;
+}
+
+.s3 {
+    grid-area: z3;
+    background-color: $secondary-color;
+}
+
+.box-l {
+    font-size: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: $primary-font, sans-serif;
+    font-size: 25px;
+    /* Tamaño de fuente específico para BOLD◉X */
+    color: $primary-color;
+
+    height: 600px;
+    width: 100%;
+
+    display: grid;
+    grid-template-areas:
+        'p1 p1 p1'
+        'p2 p3 p4';
+    background-color: $secondary-color;
+    padding: 10px;
+
+        
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.lanzamiento-tipo {
+    grid-area: p1;
+    width: 100%;
+}
+
+.c1 {
+    grid-area: p2;
+}
+
+.c2 {
+    margin-left: 100px;
+    grid-area: p3;
+    margin-right: 100px;
+}
+
+.c3 {
+    grid-area: p4;
+}
+
+.box-lc {
+    font-size: 100px;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-family: $primary-font, sans-serif;
+    font-size: 15px;
+    /* Tamaño de fuente específico para BOLD◉X */
+    color: $primary-color;
+
+    height: 400px;
+    width: 400px;
+}

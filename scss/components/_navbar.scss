@@ -1,0 +1,35 @@
+
+.navbar{
+    background-color: #ebebeb;
+}
+
+.navbar-brand{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 25px !important;
+    color: #2e1572 !important; 
+}
+
+.nav-link{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px!important;
+    color: #2e1572 !important; 
+}
+
+.navbar .navbar-toggler-icon{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='%232e1572' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+
+.navbar .navbar-toggler{
+    border-color:#2e1572;
+    border-width: 2px;
+}
+
+.dropdown-menu{
+    background-color: #ebebeb !important;
+}
+
+.dropdown-menu li{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13px!important;
+    color: #2e1572 !important; 
+}
